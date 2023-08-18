@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr": "nodemon dist/ng-default/server/main.js",
-    "build:ssr": "ng build && ng run ng-default:server",
+    "build:ssr": "ng build -c production && ng run ng-default:server",
     "prerender": "ng run ng-default:prerender"
   },
   "private": true,
