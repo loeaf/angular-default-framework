@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'oh-my-baby';
+  title = 'ng-default';
   public testBrowser  : boolean | undefined;
   public data         : any;
   constructor(private translateService: TranslateService,

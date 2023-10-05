@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "oh-my-baby": {
+    "ng-default": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/oh-my-baby/browser",
+            "outputPath": "dist/ng-default/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "oh-my-baby:build:production"
+              "browserTarget": "ng-default:build:production"
             },
             "development": {
-              "browserTarget": "oh-my-baby:build:development"
+              "browserTarget": "ng-default:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "oh-my-baby:build"
+            "browserTarget": "ng-default:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/oh-my-baby/server",
+            "outputPath": "dist/ng-default/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -128,12 +128,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "oh-my-baby:build:development",
-              "serverTarget": "oh-my-baby:server:development"
+              "browserTarget": "ng-default:build:development",
+              "serverTarget": "ng-default:server:development"
             },
             "production": {
-              "browserTarget": "oh-my-baby:build:production",
-              "serverTarget": "oh-my-baby:server:production"
+              "browserTarget": "ng-default:build:production",
+              "serverTarget": "ng-default:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -147,12 +147,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "oh-my-baby:build:production",
-              "serverTarget": "oh-my-baby:server:production"
+              "browserTarget": "ng-default:build:production",
+              "serverTarget": "ng-default:server:production"
             },
             "development": {
-              "browserTarget": "oh-my-baby:build:development",
-              "serverTarget": "oh-my-baby:server:development"
+              "browserTarget": "ng-default:build:development",
+              "serverTarget": "ng-default:server:development"
             }
           },
           "defaultConfiguration": "production"
