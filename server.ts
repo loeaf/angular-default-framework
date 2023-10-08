@@ -6,6 +6,10 @@ import * as express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
+(global as {window: unknown}).window = global;
+(global as {location: unknown}).location = global;
+(global as any).WebSocket = require('ws');
+(global as any).XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
